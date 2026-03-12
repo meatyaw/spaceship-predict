@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 from pathlib import Path
 
-encoders = joblib.load(Path(__file__).parent / "artifacts" / "preprocessor.pkl")
-model    = joblib.load(Path(__file__).parent / "artifacts" / "model.pkl")
+encoders = joblib.load(Path(__file__).parent / "preprocessor.pkl")
+model    = joblib.load(Path(__file__).parent / "model.pkl")
 
 SPENDING_COLS        = ["RoomService", "FoodCourt", "ShoppingMall", "Spa", "VRDeck"]
 CATEGORICAL_FEATURES = ["HomePlanet", "CryoSleep", "Destination", "VIP", "Deck", "Side", "Age_group"]
